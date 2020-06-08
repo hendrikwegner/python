@@ -24,7 +24,7 @@ while len(primes) < int(sys.argv[1]):
 
 ende = time.time()
 print(primes)
-print('Gesamtzeit: {:6.3f}s and {} iterrations'.format(ende - start, j))
+print('Total time: {:6.3f}s and {} iterations'.format(ende - start, j))
 
 startSum = time.time()
 sum = 0
@@ -32,4 +32,4 @@ for i in range(0, len(primes)):
     sum = sum + primes[i]
 average = sum / len(primes)
 endSum = time.time()
-print('Gesamtzeit (Schnitt): {:6.3f}s Schnitt: {}'.format(endSum - startSum, average))
+print('Total time (Average): {:6.3f}s Average: {}'.format(endSum - startSum, average))
